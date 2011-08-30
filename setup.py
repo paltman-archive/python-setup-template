@@ -1,3 +1,4 @@
+import codecs
 import os
 import sys
 
@@ -7,7 +8,7 @@ from setuptools import setup, find_packages
 
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+    return codecs.open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
 # Provided as an attribute, so you can append to these instead
